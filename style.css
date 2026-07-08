@@ -100,7 +100,11 @@ h2 { font-size: clamp(36px, 5vw, 58px); }
 
 /* ---------- Twin image ---------- */
 .twin { text-align: center; padding: 40px 24px 90px; }
-.twin img { width: min(420px, 72vw); height: auto; mix-blend-mode: multiply; }
+.twin img {
+  width: min(420px, 72vw); height: auto; mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(ellipse 48% 47% at 50% 50%, #000 55%, transparent 97%);
+  mask-image: radial-gradient(ellipse 48% 47% at 50% 50%, #000 55%, transparent 97%);
+}
 
 /* ---------- Sections ---------- */
 .section { text-align: center; padding: 90px 24px; }
