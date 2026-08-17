@@ -1,95 +1,200 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ment Markers</title>
-  <meta name="description" content="Aggregates health data from wearables and tests into a clear, AI-driven platform offering personalized insights and actionable steps for preventive wellness.">
-  <meta property="og:title" content="Ment Markers">
-  <meta property="og:description" content="Aggregates health data from wearables and tests into a clear, AI-driven platform offering personalized insights and actionable steps for preventive wellness.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mentmarkers.com/">
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ment Markers — Longevity intelligence för kvinnor</title>
+<meta name="description" content="Trötthet, PMS och hjärndimma har en förklaring. Ment Markers samlar blodprov, wearables, hormoner, cykel och livsstil på ett ställe och tolkar dem tillsammans.">
+<meta name="theme-color" content="#fdf9f6">
+<link rel="icon" type="image/png" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<meta property="og:title" content="Ment Markers — Longevity intelligence för kvinnor">
+<meta property="og:description" content="Din kropp, kartlagd. En digital hälsotvilling som översätter kroppens signaler till nästa bästa steg.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mentmarkers.com/">
 </head>
 <body>
 
-<header>
-  <nav class="nav">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="Ment Markers">
-      <span>MENT MARKERS</span>
-    </a>
-    <div class="nav-links">
-      <a href="om-oss.html">Om oss</a>
-      <a href="#intresselistan" class="dim">Intresselistan</a>
-    </div>
-  </nav>
+<a class="skip-link" href="#main" data-i18n="skip">Hoppa till innehåll</a>
+
+<header class="site-header" id="site-header">
+  <a class="site-header__logo" href="#top" aria-label="Ment Markers">
+    <img src="assets/logo-wordmark-plum.svg" alt="Ment Markers" width="344" height="48">
+  </a>
+  <div class="site-header__right">
+    <nav class="site-nav" aria-label="Huvudmeny" data-i18n-aria-label="nav.label">
+      <a href="#kartlagd" data-i18n="nav.platform">Plattformen</a>
+      <a href="#vad-vi-mater" data-i18n="nav.measure">Vad vi mäter</a>
+      <a href="#sa-funkar-det" data-i18n="nav.how">Så funkar det</a>
+      <a href="om-oss.html" data-i18n="nav.about">Om oss</a>
+    </nav>
+    <span class="lang-switch" role="group" aria-label="Språk" data-i18n-aria-label="lang.label">
+      <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+      <span class="lang-switch__sep" aria-hidden="true">/</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </span>
+  </div>
 </header>
 
-<main>
-  <section class="hero" id="intresselistan">
-    <h1>Alla din hälsodata<br>på <span class="muted">en plattform.</span></h1>
-    <p class="sub">Förstå kroppens signaler genom att samla dem i ett enda system.</p>
+<div class="header-spacer" id="top"></div>
 
-    <form class="signup" action="https://formsubmit.co/loooviisas@hotmail.com" method="POST">
-      <input type="email" name="email" placeholder="Din e-postadress" required autocomplete="email">
-      <input type="hidden" name="_subject" value="Ny anmälan till Ment Markers intresselista">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" style="display:none">
-      <button type="submit">Anmäl dig nu</button>
-    </form>
-    <p class="early">Få tidig tillgång före alla andra.</p>
+<main id="main">
+
+  <!-- ── Hero ─────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Longevity intelligence för kvinnor</p>
+    <h1 class="hero__title" data-i18n="hero.title">Dina prover är normala. Ändå är du helt slut.</h1>
+    <div class="hero__grid">
+      <p class="hero__body" data-i18n="hero.body">Trötthet, PMS och hjärndimma har en förklaring. Blodprov, wearables, hormoner, cykel och livsstil samlas på ett ställe och tolkas tillsammans.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#vantelistan" data-i18n="hero.cta">Ställ dig i väntelistan<span class="btn__badge" aria-hidden="true">→</span></a>
+        <span class="hero__note" data-i18n="hero.note">Founding members får tillgång först.</span>
+      </div>
+    </div>
   </section>
 
-  <div class="twin">
-    <img src="assets/health-twin.webp" alt="Layered anatomical health twin">
-  </div>
-
-  <hr class="rule">
-
-  <section class="section">
-    <h2>Mer hälsodata än någonsin<br>samlas in.</h2>
-    <p class="sub">Ment Markers hjälper dig förstå dina data och omsätta dem till handling.</p>
+  <!-- ── Din kropp, kartlagd ──────────────────────────────────────── -->
+  <section class="mapped" id="kartlagd">
+    <div class="mapped__badges" aria-hidden="true">
+      <div class="badge-float drift"  style="--x:7%;  --y:27%; --dur:9s;    --delay:0s">   <span class="badge badge--q" data-i18n="badge.tired">Trött fast du sover?</span></div>
+      <div class="badge-float drift2" style="--x:62%; --y:21%; --dur:10.7s; --delay:.6s">  <span class="badge badge--q" data-i18n="badge.bloated">Svullen utan förklaring?</span></div>
+      <div class="badge-float drift"  style="--x:68%; --y:70%; --dur:12.4s; --delay:1.2s"> <span class="badge badge--q" data-i18n="badge.cycle">Cykeln som ändrat sig?</span></div>
+      <div class="badge-float drift2" style="--x:11%; --y:47%; --dur:14.1s; --delay:1.8s"> <span class="badge badge--d" data-i18n="badge.ferritin">Ferritin 18 µg/L</span></div>
+      <div class="badge-float drift"  style="--x:84%; --y:36%; --dur:9s;    --delay:2.4s"> <span class="badge badge--d" data-i18n="badge.hrv">HRV 41 ms</span></div>
+      <div class="badge-float drift2" style="--x:6%;  --y:75%; --dur:10.7s; --delay:3s">   <span class="badge badge--d" data-i18n="badge.vitd">D-vitamin 43 nmol/L</span></div>
+      <div class="badge-float drift"  style="--x:52%; --y:86%; --dur:12.4s; --delay:3.6s"> <span class="badge badge--d" data-i18n="badge.sleep">Sömn 6 h 12 min</span></div>
+    </div>
+    <h2 class="mapped__title" data-i18n="mapped.title">Din kropp, kartlagd.</h2>
+    <p class="mapped__body" data-i18n="mapped.body">En digital hälsotvilling som översätter kroppens signaler till nästa bästa steg och följer dem över tid.</p>
   </section>
 
-  <hr class="rule">
-
-  <div class="cards">
-    <div class="card">
-      <h3>Ett system</h3>
-      <p>Samla wearables, Apple- och Google Hälsa, blodprov, hormoner, menscykel, kost och mer i en och samma app.</p>
+  <!-- ── Vad vi mäter ─────────────────────────────────────────────── -->
+  <section class="measure" id="vad-vi-mater">
+    <div class="measure__nav">
+      <p class="eyebrow" data-i18n="measure.eyebrow">VAD VI MÄTER</p>
+      <div class="measure__tabs" role="tablist" aria-orientation="vertical" aria-label="Mätkategorier" data-i18n-aria-label="measure.tablist">
+        <button type="button" role="tab" id="tab-0" aria-controls="panel-measure" aria-selected="true"  tabindex="0"  data-cat="0">Hormonell hälsa</button>
+        <button type="button" role="tab" id="tab-1" aria-controls="panel-measure" aria-selected="false" tabindex="-1" data-cat="1">Sköldkörtel</button>
+        <button type="button" role="tab" id="tab-2" aria-controls="panel-measure" aria-selected="false" tabindex="-1" data-cat="2">Inflammation</button>
+        <button type="button" role="tab" id="tab-3" aria-controls="panel-measure" aria-selected="false" tabindex="-1" data-cat="3">Prestation &amp; återhämtning</button>
+        <button type="button" role="tab" id="tab-4" aria-controls="panel-measure" aria-selected="false" tabindex="-1" data-cat="4">Näringsstatus</button>
+      </div>
     </div>
-    <div class="card">
-      <h3>Digital hälsotvilling</h3>
-      <p>Vi skapar en personlig avatar där du kan visualisera dina mål.</p>
+    <div class="measure__panel" role="tabpanel" id="panel-measure" aria-labelledby="tab-0" tabindex="0">
+      <p class="measure__source" id="measure-source">Blodprov — de hormoner som styr energi, humör och cykel.</p>
+      <ul class="chips" id="measure-markers">
+        <li class="chip">AMH</li>
+        <li class="chip">Östradiol</li>
+        <li class="chip">Progesteron</li>
+        <li class="chip">LH / FSH</li>
+        <li class="chip">Prolaktin</li>
+        <li class="chip">SHBG</li>
+        <li class="chip">DHEA-S</li>
+        <li class="chip">Testosteron, totalt &amp; fritt</li>
+        <li class="chip">Kortisol</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>The Ment Mentor</h3>
-      <p>Din personliga AI-guide för bättre vanor, mer energi och nästa bästa steg för din hälsa baserat på dina egna data.</p>
-    </div>
-  </div>
-
-  <hr class="rule">
-
-  <section class="section">
-    <h2>Longevity Intelligence.</h2>
-    <p class="sub">Vi skapar klarhet för dina hälsobeslut.</p>
   </section>
+
+  <!-- ── Från data till beslut ────────────────────────────────────── -->
+  <section class="steps" id="sa-funkar-det">
+    <p class="eyebrow" data-i18n="steps.eyebrow">SÅ FUNKAR DET</p>
+    <h2 class="steps__title" data-i18n="steps.title">Från data till beslut</h2>
+
+    <div class="step">
+      <div class="step__text">
+        <span class="step__num" aria-hidden="true">01</span>
+        <h3 class="step__heading" data-i18n="step1.title">Provtagning</h3>
+        <p class="step__body" data-i18n="step1.body">Du bokar tid på en mottagning och lämnar dina prover där. Sedan kopplar du din ring, klocka, Apple eller Google Hälsa. Eller ladda upp tidigare resultat du redan har.</p>
+      </div>
+      <div class="step__media">
+        <img src="assets/step-1.jpg" alt="" style="object-position:47% 45%" loading="lazy" onerror="this.remove()">
+      </div>
+    </div>
+
+    <div class="step step--reverse">
+      <div class="step__media">
+        <img src="assets/step-2-lab.jpg" alt="" style="object-position:50% 45%" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="step__text">
+        <span class="step__num" aria-hidden="true">02</span>
+        <h3 class="step__heading" data-i18n="step2.title">Förstå din kropp</h3>
+        <p class="step__body" data-i18n="step2.body">Varje signal läses tillsammans med de andra, aldrig isolerat, och tolkas specifikt utifrån kvinnlig fysiologi: cykel, hormoner och de referensvärden som faktiskt gäller dig. Allt byggs in i din hälsotvilling.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step__text">
+        <span class="step__num" aria-hidden="true">03</span>
+        <h3 class="step__heading" data-i18n="step3.title">Förbättra din hälsa</h3>
+        <p class="step__body" data-i18n="step3.body">The Ment Mentor ger dig nästa bästa steg, ett i taget, baserat på dina egna data.</p>
+      </div>
+      <div class="step__media">
+        <img src="assets/step-3-blush-v2.jpg" alt="" style="object-position:50% 50%" loading="lazy" onerror="this.remove()">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Founding members ─────────────────────────────────────────── -->
+  <section class="founding" id="founding">
+    <div class="founding__grid">
+      <div class="founding__intro">
+        <p class="eyebrow" data-i18n="founding.eyebrow">FOUNDING MEMBERS</p>
+        <h2 class="founding__title" data-i18n="founding.title">Förboka ditt första test.</h2>
+        <p class="founding__body" data-i18n="founding.body">Vi öppnar 30 platser för kvinnor som känner att något är fel men inte riktigt kan sätta fingret på vad det är.</p>
+      </div>
+
+      <div class="offer">
+        <div class="offer__price">
+          <span class="offer__amount">1 495 kr</span>
+          <span class="offer__qualifier" data-i18n="offer.qualifier">engångsbelopp, förbokning av ditt första test</span>
+        </div>
+        <ul class="offer__list">
+          <li data-i18n="offer.item1">Blodpanel på mottagning</li>
+          <li data-i18n="offer.item2">Hormon- och cykelpanel</li>
+          <li data-i18n="offer.item3">Först i kön vid lansering</li>
+        </ul>
+        <a class="btn btn--primary btn--solid" href="#vantelistan" data-i18n="offer.cta">Förboka för 1 495 kr</a>
+        <span class="offer__fineprint" data-i18n="offer.fineprint">Ingen betalning sker nu. Anmäl dig i väntelistan så hör vi av oss med tid och betalning när vi öppnar.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Väntelistan ──────────────────────────────────────────────── -->
+  <section class="waitlist" id="vantelistan">
+    <div class="waitlist__portrait" aria-hidden="true">
+      <img src="assets/portrait-soft.png" alt="" loading="lazy" onerror="this.remove()">
+    </div>
+    <div class="waitlist__content">
+      <h2 class="waitlist__title" data-i18n="waitlist.title">Din kropp har sagt det länge.</h2>
+      <p class="waitlist__body" data-i18n="waitlist.body">Vi lanserar snart. Ställ dig i väntelistan så hör vi av oss först till dig.</p>
+      <!-- Waitlist posts to FormSubmit, unchanged from the previous site.
+           Swap the address in the action attribute to change recipient. -->
+      <form class="waitlist__form" action="https://formsubmit.co/loooviisas@hotmail.com" method="POST">
+        <label class="sr-only" for="waitlist-email" data-i18n="waitlist.label">E-postadress</label>
+        <input type="email" id="waitlist-email" name="email" autocomplete="email" required
+               placeholder="Din e-postadress" data-i18n-placeholder="waitlist.placeholder">
+        <input type="hidden" name="_subject" value="Ny anmälan till Ment Markers intresselista">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <button type="submit" data-i18n="waitlist.submit">Anmäl →</button>
+      </form>
+    </div>
+  </section>
+
 </main>
 
-<footer>
-  <div class="foot">
-    <div class="foot-left">
-      <p>Mindre ego, mer data.</p>
-      <p>Ment Markers ställer inga diagnoser och ersätter inte medicinsk vård.</p>
-    </div>
-    <div class="foot-right">
-      <img src="assets/logo.png" alt="">
-      <span>Ment Markers</span>
-    </div>
-  </div>
+<footer class="site-footer">
+  <span class="site-footer__mark">MENT MARKERS</span>
+  <span data-i18n="footer.disclaimer">Ställer inga diagnoser, ersätter inte medicinsk vård.</span>
+  <a href="mailto:infomentmarkers@gmail.com">infomentmarkers@gmail.com</a>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
