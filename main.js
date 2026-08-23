@@ -25,17 +25,42 @@
     'skip': 'Skip to content',
     'nav.label': 'Main menu',
     'nav.platform': 'The platform',
-    'nav.measure': 'What we measure',
-    'nav.how': 'How it works',
+    'nav.market': 'Ment Market',
+    'nav.measure': 'Your longevity',
+    'nav.how': 'How Ment works',
     'nav.about': 'About',
     'lang.label': 'Language',
 
     /* — index.html — */
     'hero.eyebrow': 'Longevity intelligence for women',
-    'hero.title': "Your labs are normal. You're still exhausted.",
-    'hero.body': 'Fatigue, PMS and brain fog have an explanation. We gather blood work, wearables, hormones, cycle and lifestyle in one place and read them together.',
-    'hero.cta': 'Join the waitlist',
-    'hero.note': 'Founding members get access first.',
+    'hero.title': 'Ageing is inevitable. How you age is not.',
+    'hero.title1': 'Ageing is inevitable.',
+    'hero.title2': 'How you age is not.',
+    'hero.aboutCta': 'About Ment',
+    'hero.caption': 'Access curated testing, products, treatments and longevity interventions through MENT.',
+    'hero.body': "Hormones, recovery and your cells' capacity to repair change long before you feel older. Ment connects the signals so you can act earlier.",
+    'hero.cta': 'Get early access',
+    'hero.secondaryCta': 'Discover your longevity',
+    'hero.note': 'Built for the female body. Founded in Sweden.',
+
+    'platform.eyebrow': 'MENT HEALTH TWIN',
+    'platform.title': 'Not more data. Better decisions.',
+    'platform.body': 'Your personal health twin connects blood work, hormones, cycle, wearables and lifestyle. See what is changing, why it matters and what to do next.',
+    'platform.score': 'YOUR MENT SIGNAL',
+    'platform.trend': 'YOUR TREND',
+    'platform.trendValue': 'Stronger than 90 days ago',
+    'platform.action': 'NEXT BEST STEP',
+    'platform.actionValue': 'Stabilise recovery',
+    'platform.actionBody': 'Your HRV drops during the late luteal phase. Adjust training load and sleep window for 7 days.',
+    'platform.step1': 'We bring all your health data together, with access to tailored health testing through our partner clinics.',
+    'platform.step2': 'Your digital twin is created — a living representation of your body that evolves with your data.',
+    'platform.step3': 'We turn your data into personalised guidance. Ment helps you understand what to focus on next to reach your health goals.',
+    'platform.step4': 'We give you the data. You act on it.',
+    'platform.outro': 'Access curated testing, products, treatments and longevity interventions through MENT.',
+
+    'app.eyebrow': 'THE MENT APP',
+    'app.title': 'A digital mirror of your biological health.',
+    'app.launching': 'Launching soon.',
 
     'badge.tired': 'Tired even though you sleep?',
     'badge.bloated': 'Bloated for no reason?',
@@ -51,42 +76,79 @@
     'measure.eyebrow': 'WHAT WE MEASURE',
     'measure.tablist': 'Measurement categories',
 
-    'steps.eyebrow': 'HOW IT WORKS',
-    'steps.title': 'From data to decision',
-    'step1.title': 'Gather',
-    'step1.body': 'Book a time at a clinic and do your tests there. Then connect your ring, watch, Apple or Google Health, or upload results you already have.',
-    'step2.title': 'Understand',
-    'step2.body': 'Every signal is read together with the others, never in isolation, and interpreted specifically for female physiology: cycle, hormones and the reference values that actually apply to you. Built into your health twin.',
-    'step3.title': 'Act',
-    'step3.body': 'The Ment Mentor gives you the next best step, one at a time, based on your own data.',
-
-    'founding.eyebrow': 'FOUNDING MEMBERS',
-    'founding.title': 'Pre-book your first test.',
-    'founding.body': 'We are opening 30 places for women who feel that something is wrong but cannot quite put their finger on what.',
-    'offer.qualifier': 'one-time, pre-booking of your first test',
-    'offer.item1': 'Blood panel at a clinic',
-    'offer.item2': 'Hormone and cycle panel',
-    'offer.item3': 'First in line at launch',
-    'offer.cta': 'Pre-book for 1 495 kr',
-    'offer.fineprint': 'No payment is taken now. Join the waitlist and we will be in touch about a time and payment when we open.',
-
-    'waitlist.title': 'Your body has been saying it for a long time.',
-    'waitlist.body': 'We launch soon. Join the waitlist and we will reach out to you first.',
+    'membership.eyebrow': 'EARLY ACCESS',
+    'membership.title': 'Be among the first.',
+    'membership.intro': 'Ment will initially open exclusively to people living in Stockholm. Early Members receive priority access and personal onboarding.',
+    'membership.stockholm': 'FIRST LAUNCH · STOCKHOLM ONLY',
+    'membership.entry.eyebrow': 'YOUR PLACE IN MENT',
+    'membership.entry.title1': 'ARE YOU ON',
+    'membership.entry.title2': 'THE WAITLIST?',
+    'membership.entry.cta': 'JOIN THE WAITLIST',
+    'membership.drawer.title': 'Choose your path',
+    'membership.drawer.close': 'Close',
+    'membership.priority': '01 / PRIORITY ACCESS',
+    'membership.perMonth': '/ month',
+    'membership.early.badge': 'EARLY MEMBER',
+    'membership.early.title': 'Your membership',
+    'membership.early.lock': 'Your price remains locked at SEK 99 per month for as long as you continue using Ment.',
+    'membership.early.item1': 'Priority access with personal onboarding.',
+    'membership.early.item2': 'Your membership only begins once you have booked your blood test.',
+    'membership.early.item5': 'The blood test is booked and paid for separately.',
+    'membership.early.cta': 'Reserve your place — SEK 99',
+    'membership.early.pending': 'Payments open soon.',
+    'membership.waitlist.badge': 'FREE WAITLIST',
+    'membership.waitlist.title': 'Prefer to wait?',
+    'membership.waitlist.lead': 'Follow the launch without reserving a priority place. The waitlist does not provide a guaranteed start date.',
+    'membership.waitlist.cta': 'Join the waitlist',
     'waitlist.label': 'Email address',
     'waitlist.placeholder': 'Your email address',
-    'waitlist.submit': 'Join →',
 
-    'footer.disclaimer': 'Does not diagnose, does not replace medical care.',
+    'faq.eyebrow': 'FREQUENTLY ASKED QUESTIONS',
+    'faq.title': 'The essentials, without the fine print.',
+    'faq.early.q': 'What does becoming an Early Member mean?',
+    'faq.early.a': 'You receive priority access and personal onboarding. Your membership price stays locked at SEK 99 per month for as long as you continue using Ment.',
+    'faq.payment.q': 'What happens to the SEK 99 I pay now?',
+    'faq.payment.a': 'The payment reserves your Early Member place and counts as your first month. Your subscription does not start running until you have booked your blood test.',
+    'faq.test.q': 'Is the blood test included in the membership price?',
+    'faq.test.a': 'No. The blood test is booked and paid for separately. You will receive clear information about the test before you need to book.',
+    'faq.waitlist.q': 'What is the difference between an Early Member and the waitlist?',
+    'faq.waitlist.a': 'Early Members receive priority access and a locked membership price. The standard waitlist is free but offers no priority or guaranteed start date.',
+    'faq.medical.q': 'Does Ment replace medical care?',
+    'faq.medical.a': 'No. Ment provides health insights and guidance but does not diagnose or replace contact with a licensed healthcare professional.',
+
+    'finalCta.eyebrow': 'EARLY ACCESS · STOCKHOLM',
+    'finalCta.title': 'Begin before you feel it.',
+    'finalCta.body': 'Reserve your place with Ment and be among the first to get access.',
+    'finalCta.button': 'Join the waitlist',
+
+    'market.eyebrow': 'THE MENT MARKET',
+    'market.curated': 'Curated for your body.',
+    'market.launching': 'Launching soon.',
+    'market.description': 'A curated marketplace for the next generation of longevity.',
+    'market.categories': 'Peptides. Diagnostics. Supplements. Treatments. Recovery. Skincare.',
+    'market.categoriesLabel': 'Categories',
+    'market.category1': 'Peptides',
+    'market.category2': 'Diagnostics',
+    'market.category3': 'Supplements',
+    'market.category4': 'Treatments',
+    'market.category5': 'Recovery',
+    'market.category6': 'Skincare',
+    'market.cta': 'Join the waitlist',
+
+    'footer.disclaimer': 'Provides health insights but does not diagnose or replace medical care.',
 
     /* — om-oss.html — */
     'about.eyebrow': 'ABOUT MENT MARKERS',
     'about.title': 'We are building a new way to understand health.',
     'about.body1': "Ment Markers is a preventive health concept that combines AI with health data. The goal is to make the body's signals comprehensible and help people make better decisions for their long-term health.",
     'about.body2': 'Wherever you start, Ment Markers gives you the intelligence to understand your longevity and the confidence to own it. Founded by women. Built in Sweden.',
+    'about.stockholm': 'FOUNDED IN STOCKHOLM',
     'founders.label': 'OUR FOUNDERS',
+    'founders.title': 'The people behind Ment.',
     'founders.sara.role': 'CO-FOUNDER, SCIENCE',
     'founders.lovisa.role': 'CO-FOUNDER, PRODUCT',
     'values.title': 'What we hold to',
+    'values.eyebrow': 'OUR FOUNDATION',
     'value1.title': 'Clarity over complexity',
     'value1.body': 'We turn clinical data such as genetics, blood work and biometrics into insights you can actually understand, not raw numbers that need a medical degree.',
     'value2.title': 'Own your data, own your health',
@@ -95,7 +157,9 @@
     'value3.body': 'Every insight is built on clinically grounded data and real science, not trends or wellness fads.',
     'value4.title': 'Progress you can measure',
     'value4.body': 'We focus on long term, trackable change: biological age, risk markers and real trends over time.',
-    'aboutWaitlist.title': 'Stop guessing about your own body.'
+    'aboutWaitlist.title': 'Stop guessing about your own body.',
+    'waitlist.body': 'We are launching soon. Join the waitlist and be among the first to hear from us.',
+    'waitlist.submit': 'Join'
   };
 
   /* Categories are rendered from data, so they carry both languages. */
@@ -270,7 +334,7 @@
   });
 
   /* =================================================================
-     3. Header — hide on scroll down, show on scroll up
+     3. Header — transparent in the hero, glass after scrolling
      ================================================================= */
 
   var header = document.getElementById('site-header');
@@ -280,8 +344,11 @@
 
     var onScroll = function () {
       var y = window.scrollY;
-      if (y < 60) {
+      if (y < 24) {
         header.classList.remove('is-stuck', 'is-hidden');
+      } else if (header.classList.contains('ment-header')) {
+        header.classList.add('is-stuck');
+        header.classList.remove('is-hidden');
       } else {
         header.classList.add('is-stuck');
         header.classList.toggle('is-hidden', y > lastY);
@@ -295,6 +362,7 @@
       ticking = true;
       window.requestAnimationFrame(onScroll);
     }, { passive: true });
+    onScroll();
   }
 
   /* =================================================================

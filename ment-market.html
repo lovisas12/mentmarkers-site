@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ment Market — Curated for your body</title>
+  <meta name="description" content="The Ment Market. A curated marketplace for the next generation of longevity.">
+  <meta name="theme-color" content="#b8c7cc">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="ment-market.css">
+</head>
+<body class="home-redesign market-page">
+  <a class="skip-link" href="#main" data-i18n="skip">Hoppa till innehåll</a>
+
+  <header class="ment-header" id="site-header">
+    <div class="ment-header__glass">
+      <a class="ment-header__logo" href="index.html" aria-label="Ment">
+        <img src="assets/ment-logo.svg" alt="Ment" width="43" height="48">
+      </a>
+      <nav class="ment-nav" aria-label="Huvudmeny" data-i18n-aria-label="nav.label">
+        <a href="index.html#sa-funkar-det" data-i18n="nav.how">Så funkar Ment</a>
+        <a href="ment-market.html" class="is-current" aria-current="page" data-i18n="nav.market">Ment Market</a>
+        <a href="om-oss.html" data-i18n="nav.about">Om oss</a>
+      </nav>
+      <div class="ment-header__actions">
+        <span class="lang-switch" role="group" aria-label="Språk" data-i18n-aria-label="lang.label">
+          <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+          <span class="lang-switch__sep" aria-hidden="true">/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="market-hero">
+    <div class="market-hero__content">
+      <div class="market-hero__topline">
+        <p class="market-hero__eyebrow" data-i18n="market.eyebrow">THE MENT MARKET</p>
+        <p class="market-hero__status" data-i18n="market.launching">Lanseras snart.</p>
+      </div>
+
+      <div class="market-hero__main">
+        <h1 data-i18n="market.curated">Utvalt för din kropp.</h1>
+        <p class="market-hero__description" data-i18n="market.description">En kurerad marknadsplats för nästa generations longevity.</p>
+
+        <ul class="market-categories" aria-label="Kategorier" data-i18n-aria-label="market.categoriesLabel">
+          <li data-i18n="market.category1">Peptider</li>
+          <li data-i18n="market.category2">Diagnostik</li>
+          <li data-i18n="market.category3">Kosttillskott</li>
+          <li data-i18n="market.category4">Behandlingar</li>
+          <li data-i18n="market.category5">Återhämtning</li>
+          <li data-i18n="market.category6">Hudvård</li>
+        </ul>
+
+        <a class="market-hero__cta" href="index.html?waitlist=open#vantelistan">
+          <span data-i18n="market.cta">Gå med i väntelistan</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -13,12 +13,11 @@ Statisk webbplats för Ment Markers, byggd i ren HTML/CSS/JS utan byggsteg.
 
 ## Intresselistan
 
-Oförändrad. Formulären på båda sidorna postar direkt till
-[FormSubmit](https://formsubmit.co) via vanlig HTML-POST – ingen JavaScript
-inblandad, så de fungerar även om `main.js` inte laddas. Första gången någon
+Den kostnadsfria väntelistan på startsidan postar direkt till
+[FormSubmit](https://formsubmit.co) via vanlig HTML-POST. Länkarna på Ment
+Market och Om oss öppnar samma medlemsval på startsidan. Första gången någon
 anmäler sig skickas ett aktiveringsmail – klicka på länken i det så fungerar
-formuläret därefter. Byt adress genom att ändra `action`-attributet i
-`index.html` och `om-oss.html`.
+formuläret därefter.
 
 ## Språk
 
@@ -45,10 +44,9 @@ originalfoton och kan återskapas om råfilerna byts ut:
 
 ## Founding Members
 
-Sektionen visar erbjudandet (1 495 kr) men **tar inte emot någon betalning** –
-knappen leder till väntelistan, och texten säger uttryckligen att ingen
-betalning sker nu. När Stripe är på plats: byt knappen mot en riktig kassa med
-server-side PaymentIntent, kvitto via mail och en spärr på 30 platser.
+Sektionen visar Early Member-erbjudandet (99 kr/månad) men **tar inte emot
+någon betalning ännu**. När betalningen ska öppnas behöver den inaktiva knappen
+kopplas till en riktig kassa.
 
 ## Publicering
 

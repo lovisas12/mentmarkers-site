@@ -1,139 +1,114 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Om oss — Ment Markers</title>
-<meta name="description" content="Ment Markers är ett preventivvårdskoncept som kombinerar AI med hälsodata. Grundat av kvinnor. Byggt i Sverige.">
-<meta name="theme-color" content="#fdf9f6">
-<link rel="icon" type="image/png" href="assets/logo.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-
-<meta property="og:title" content="Om oss — Ment Markers">
-<meta property="og:description" content="Vi bygger ett nytt sätt att förstå hälsa. Grundat av kvinnor. Byggt i Sverige.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mentmarkers.com/om-oss.html">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Om oss — Ment Markers</title>
+  <meta name="description" content="Ment Markers är ett preventivvårdskoncept som kombinerar AI med hälsodata. Grundat av kvinnor. Byggt i Sverige.">
+  <meta name="theme-color" content="#b8c7cc">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="ment-market.css">
+  <link rel="stylesheet" href="about-market.css">
+  <meta property="og:title" content="Om oss — Ment Markers">
+  <meta property="og:description" content="Vi bygger ett nytt sätt att förstå hälsa. Grundat av kvinnor. Byggt i Sverige.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mentmarkers.com/om-oss.html">
 </head>
-<body>
+<body class="home-redesign market-page about-market-page">
+  <a class="skip-link" href="#main" data-i18n="skip">Hoppa till innehåll</a>
 
-<a class="skip-link" href="#main" data-i18n="skip">Hoppa till innehåll</a>
-
-<header class="site-header" id="site-header">
-  <a class="site-header__logo" href="index.html" aria-label="Ment Markers">
-    <img src="assets/logo-wordmark-plum.svg" alt="Ment Markers" width="344" height="48">
-  </a>
-  <div class="site-header__right">
-    <nav class="site-nav" aria-label="Huvudmeny" data-i18n-aria-label="nav.label">
-      <a href="index.html#kartlagd" data-i18n="nav.platform">Plattformen</a>
-      <a href="index.html#vad-vi-mater" data-i18n="nav.measure">Vad vi mäter</a>
-      <a href="index.html#sa-funkar-det" data-i18n="nav.how">Så funkar det</a>
-      <a href="om-oss.html" class="is-current" aria-current="page" data-i18n="nav.about">Om oss</a>
-    </nav>
-    <span class="lang-switch" role="group" aria-label="Språk" data-i18n-aria-label="lang.label">
-      <button type="button" data-lang="sv" aria-pressed="true">SV</button>
-      <span class="lang-switch__sep" aria-hidden="true">/</span>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-    </span>
-  </div>
-</header>
-
-<div class="header-spacer" id="top"></div>
-
-<main id="main">
-
-  <!-- ── Intro ────────────────────────────────────────────────────── -->
-  <section class="about-intro">
-    <p class="eyebrow" data-i18n="about.eyebrow">OM MENT MARKERS</p>
-    <h1 class="about-intro__title" data-i18n="about.title">Vi bygger ett nytt sätt att förstå hälsa.</h1>
-    <div class="about-intro__grid">
-      <p class="about-intro__body" data-i18n="about.body1">Ment Markers är ett preventivvårdskoncept som kombinerar AI med hälsodata. Målet är att göra kroppens signaler begripliga och hjälpa människor ta bättre beslut för sin långsiktiga hälsa.</p>
-      <p class="about-intro__body about-intro__body--muted" data-i18n="about.body2">Var du än börjar ger Ment Markers dig intelligensen att förstå din longevity och tryggheten att äga den. Grundat av kvinnor. Byggt i Sverige.</p>
-    </div>
-  </section>
-
-  <!-- ── Grundarna ────────────────────────────────────────────────── -->
-  <section class="founders" id="grundarna">
-    <div class="founders__label">
-      <span class="eyebrow" data-i18n="founders.label">VÅRA GRUNDARE</span>
-      <span class="eyebrow">STOCKHOLM</span>
-    </div>
-    <div class="founders__grid">
-      <article class="founder">
-        <div class="founder__portrait">
-          <img src="assets/sara.jpg" alt="Sara Erman" loading="lazy" onerror="this.remove()">
-        </div>
-        <div>
-          <h2 class="founder__name">Sara Erman</h2>
-          <p class="eyebrow founder__role" data-i18n="founders.sara.role">MEDGRUNDARE, VETENSKAP</p>
-        </div>
-        <!-- Founder bios are verbatim author copy and stay Swedish in both languages. -->
-        <p class="founder__bio">Jag är kemist i grunden och forskar inom bioteknik. För mig är det viktigt att göra vetenskapen bakom hälsa begriplig. Min morfar gick bort i Parkinsons. Om sjukdomen hade upptäckts tidigare hade hans liv kanske kunnat se annorlunda ut. Det blev en stark drivkraft för mig: att bygga något som hjälper människor att förstå kroppens signaler i tid och arbeta preventivt innan det är för sent. Kroppen är ditt fordon genom livet, ta väl hand om den.</p>
-      </article>
-
-      <article class="founder">
-        <div class="founder__portrait">
-          <img src="assets/lovisa.jpg" alt="Lovisa Lindstaf" loading="lazy" onerror="this.remove()">
-        </div>
-        <div>
-          <h2 class="founder__name">Lovisa Lindstaf</h2>
-          <p class="eyebrow founder__role" data-i18n="founders.lovisa.role">MEDGRUNDARE, PRODUKT</p>
-        </div>
-        <p class="founder__bio">Min resa började med en sjuk mamma och en tidig insikt om hur ovärderlig vår hälsa är. Det har format min övertygelse om att vi behöver bli bättre på att blicka inåt, ta ansvar och undersöka vårt eget välmående för att kunna agera i tid. Efter fyra år i techbranschen har jag fått se kraften i AI och hur teknologin kan hjälpa oss att skapa mer personliga, förebyggande och tillgängliga lösningar. Därför bygger vi nu Ment Markers med en mission att hjälpa människor att må bättre och skapa en framtid där vi tillsammans kan förebygga ohälsa innan den uppstår.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ── Det vi håller fast vid ───────────────────────────────────── -->
-  <section class="values">
-    <h2 class="values__title" data-i18n="values.title">Det vi håller fast vid</h2>
-    <div class="values__grid">
-      <div class="value">
-        <h3 class="value__title" data-i18n="value1.title">Klarhet före komplexitet</h3>
-        <p class="value__body" data-i18n="value1.body">Vi gör kliniska data som genetik, blodvärden och biometrier till insikter du faktiskt förstår, inte råa siffror som kräver en läkarexamen.</p>
-      </div>
-      <div class="value">
-        <h3 class="value__title" data-i18n="value2.title">Äg din data, äg din hälsa</h3>
-        <p class="value__body" data-i18n="value2.body">Du äger din hälsoinformation och bestämmer hur djupt du vill gå, från snabb överblick till hela din genetiska bild.</p>
-      </div>
-      <div class="value">
-        <h3 class="value__title" data-i18n="value3.title">Bevis, inte gissningar</h3>
-        <p class="value__body" data-i18n="value3.body">Varje insikt bygger på kliniskt grundade data och verklig vetenskap, inte trender eller wellnessfluff.</p>
-      </div>
-      <div class="value">
-        <h3 class="value__title" data-i18n="value4.title">Framsteg du kan mäta</h3>
-        <p class="value__body" data-i18n="value4.body">Vi fokuserar på långsiktig, spårbar förändring: biologisk ålder, riskmarkörer och verkliga trender över tid.</p>
+  <header class="ment-header" id="site-header">
+    <div class="ment-header__glass">
+      <a class="ment-header__logo" href="index.html" aria-label="Ment">
+        <img src="assets/ment-logo.svg" alt="Ment" width="43" height="48">
+      </a>
+      <nav class="ment-nav" aria-label="Huvudmeny" data-i18n-aria-label="nav.label">
+        <a href="index.html#sa-funkar-det" data-i18n="nav.how">Så funkar Ment</a>
+        <a href="ment-market.html" data-i18n="nav.market">Ment Market</a>
+        <a href="om-oss.html" class="is-current" aria-current="page" data-i18n="nav.about">Om oss</a>
+      </nav>
+      <div class="ment-header__actions">
+        <span class="lang-switch" role="group" aria-label="Språk" data-i18n-aria-label="lang.label">
+          <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+          <span class="lang-switch__sep" aria-hidden="true">/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </span>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ── Väntelistan ──────────────────────────────────────────────── -->
-  <section class="about-waitlist" id="vantelistan">
-    <h2 class="about-waitlist__title" data-i18n="aboutWaitlist.title">Sluta gissa på din egen kropp.</h2>
-    <p class="about-waitlist__body" data-i18n="waitlist.body">Vi lanserar snart. Ställ dig i väntelistan så hör vi av oss först till dig.</p>
-    <!-- Same FormSubmit endpoint as the landing page. -->
-    <form class="waitlist__form" action="https://formsubmit.co/loooviisas@hotmail.com" method="POST">
-      <label class="sr-only" for="waitlist-email" data-i18n="waitlist.label">E-postadress</label>
-      <input type="email" id="waitlist-email" name="email" autocomplete="email" required
-             placeholder="Din e-postadress" data-i18n-placeholder="waitlist.placeholder">
-      <input type="hidden" name="_subject" value="Ny anmälan till Ment Markers intresselista">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" style="display:none">
-      <button type="submit" data-i18n="waitlist.submit">Anmäl →</button>
-    </form>
-  </section>
+  <main id="main" class="about-market">
+    <section class="about-market__hero">
+      <div class="about-market__topline">
+        <p data-i18n="about.eyebrow">OM MENT MARKERS</p>
+        <p><span aria-hidden="true"></span><span data-i18n="about.stockholm">GRUNDAT I STOCKHOLM</span></p>
+      </div>
+      <div class="about-market__hero-main">
+        <h1 data-i18n="about.title">Vi bygger ett nytt sätt att förstå hälsa.</h1>
+        <div class="about-market__intro">
+          <p data-i18n="about.body1">Ment Markers är ett preventivvårdskoncept som kombinerar AI med hälsodata. Målet är att göra kroppens signaler begripliga och hjälpa människor ta bättre beslut för sin långsiktiga hälsa.</p>
+          <p data-i18n="about.body2">Var du än börjar ger Ment Markers dig intelligensen att förstå din longevity och tryggheten att äga den. Grundat av kvinnor. Byggt i Sverige.</p>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <section class="about-founders" id="grundarna">
+      <header class="about-section-heading">
+        <p data-i18n="founders.label">VÅRA GRUNDARE</p>
+        <h2 data-i18n="founders.title">Människorna bakom Ment.</h2>
+      </header>
+      <div class="about-founders__grid">
+        <article class="about-founder">
+          <div class="about-founder__portrait"><img src="assets/sara.jpg" alt="Sara Erman" loading="lazy"></div>
+          <div class="about-founder__identity">
+            <div><h3>Sara Erman</h3><p data-i18n="founders.sara.role">MEDGRUNDARE, VETENSKAP</p></div><span>01</span>
+          </div>
+          <p class="about-founder__bio">Jag är kemist i grunden och forskar inom bioteknik. För mig är det viktigt att göra vetenskapen bakom hälsa begriplig. Min morfar gick bort i Parkinsons. Om sjukdomen hade upptäckts tidigare hade hans liv kanske kunnat se annorlunda ut. Det blev en stark drivkraft för mig: att bygga något som hjälper människor att förstå kroppens signaler i tid och arbeta preventivt innan det är för sent. Kroppen är ditt fordon genom livet, ta väl hand om den.</p>
+        </article>
 
-<footer class="site-footer">
-  <span class="site-footer__mark">MENT MARKERS</span>
-  <span data-i18n="footer.disclaimer">Ställer inga diagnoser, ersätter inte medicinsk vård.</span>
-  <a href="mailto:infomentmarkers@gmail.com">infomentmarkers@gmail.com</a>
-</footer>
+        <article class="about-founder">
+          <div class="about-founder__portrait"><img src="assets/lovisa.jpg" alt="Lovisa Lindstaf" loading="lazy"></div>
+          <div class="about-founder__identity">
+            <div><h3>Lovisa Lindstaf</h3><p data-i18n="founders.lovisa.role">MEDGRUNDARE, PRODUKT</p></div><span>02</span>
+          </div>
+          <p class="about-founder__bio">Min resa började med en sjuk mamma och en tidig insikt om hur ovärderlig vår hälsa är. Det har format min övertygelse om att vi behöver bli bättre på att blicka inåt, ta ansvar och undersöka vårt eget välmående för att kunna agera i tid. Efter fyra år i techbranschen har jag fått se kraften i AI och hur teknologin kan hjälpa oss att skapa mer personliga, förebyggande och tillgängliga lösningar. Därför bygger vi nu Ment Markers med en mission att hjälpa människor att må bättre och skapa en framtid där vi tillsammans kan förebygga ohälsa innan den uppstår.</p>
+        </article>
+      </div>
+    </section>
 
-<script src="main.js"></script>
+    <section class="about-values">
+      <header class="about-section-heading">
+        <p data-i18n="values.eyebrow">VÅR GRUND</p>
+        <h2 data-i18n="values.title">Det vi håller fast vid</h2>
+      </header>
+      <div class="about-values__grid">
+        <article class="about-value"><span>01</span><h3 data-i18n="value1.title">Klarhet före komplexitet</h3><p data-i18n="value1.body">Vi gör kliniska data som genetik, blodvärden och biometrier till insikter du faktiskt förstår, inte råa siffror som kräver en läkarexamen.</p></article>
+        <article class="about-value"><span>02</span><h3 data-i18n="value2.title">Äg din data, äg din hälsa</h3><p data-i18n="value2.body">Du äger din hälsoinformation och bestämmer hur djupt du vill gå, från snabb överblick till hela din genetiska bild.</p></article>
+        <article class="about-value"><span>03</span><h3 data-i18n="value3.title">Bevis, inte gissningar</h3><p data-i18n="value3.body">Varje insikt bygger på kliniskt grundade data och verklig vetenskap, inte trender eller wellnessfluff.</p></article>
+        <article class="about-value"><span>04</span><h3 data-i18n="value4.title">Framsteg du kan mäta</h3><p data-i18n="value4.body">Vi fokuserar på långsiktig, spårbar förändring: biologisk ålder, riskmarkörer och verkliga trender över tid.</p></article>
+      </div>
+    </section>
+
+    <section class="about-market__waitlist" id="vantelistan">
+      <p data-i18n="membership.eyebrow">EARLY ACCESS</p>
+      <h2 data-i18n="aboutWaitlist.title">Sluta gissa på din egen kropp.</h2>
+      <p data-i18n="waitlist.body">Vi lanserar snart. Ställ dig i väntelistan så hör vi av oss först till dig.</p>
+      <a class="about-market__waitlist-cta" href="index.html?waitlist=open#vantelistan">
+        <span data-i18n="membership.entry.cta">GÅ MED I VÄNTELISTAN</span><span aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="about-market__footer">
+    <a href="index.html" aria-label="Ment"><img src="assets/ment-logo.svg" alt="Ment"></a>
+    <span data-i18n="footer.disclaimer">Ställer inga diagnoser, ersätter inte medicinsk vård.</span>
+    <a href="mailto:infomentmarkers@gmail.com">infomentmarkers@gmail.com</a>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
