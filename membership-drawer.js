@@ -13,6 +13,7 @@
   const turnstileSiteKey = '0x4AAAAAAEiVYPBxlpsupaun';
   let turnstileReady = Boolean(window.turnstile);
   let turnstileWidgetId = null;
+  let turnstileToken = '';
   let turnstileResolve = null;
   let turnstileReject = null;
   let turnstileTimeout = null;
@@ -80,13 +81,25 @@
 
     turnstileWidgetId = window.turnstile.render(container, {
       sitekey: turnstileSiteKey,
-      execution: 'execute',
       appearance: 'interaction-only',
+      size: 'flexible',
       theme: 'light',
-      callback: (token) => finishTurnstileRequest('resolve', token),
-      'error-callback': () => finishTurnstileRequest('reject', new Error('Turnstile verification failed')),
-      'expired-callback': () => finishTurnstileRequest('reject', new Error('Turnstile token expired')),
-      'timeout-callback': () => finishTurnstileRequest('reject', new Error('Turnstile challenge timed out'))
+      callback: (token) => {
+        turnstileToken = token;
+        finishTurnstileRequest('resolve', token);
+      },
+      'error-callback': () => {
+        turnstileToken = '';
+        finishTurnstileRequest('reject', new Error('Turnstile verification failed'));
+      },
+      'expired-callback': () => {
+        turnstileToken = '';
+        finishTurnstileRequest('reject', new Error('Turnstile token expired'));
+      },
+      'timeout-callback': () => {
+        turnstileToken = '';
+        finishTurnstileRequest('reject', new Error('Turnstile challenge timed out'));
+      }
     });
   };
 
@@ -102,13 +115,17 @@
       return;
     }
 
+    if (turnstileToken) {
+      resolve(turnstileToken);
+      return;
+    }
+
     turnstileResolve = resolve;
     turnstileReject = reject;
     turnstileTimeout = window.setTimeout(
       () => finishTurnstileRequest('reject', new Error('Turnstile verification timed out')),
       20000
     );
-    window.turnstile.execute(turnstileWidgetId);
   });
 
   const showWaitlistSuccess = () => {
@@ -181,7 +198,10 @@
           status.hidden = false;
         }
       } finally {
-        if (window.turnstile && turnstileWidgetId !== null) window.turnstile.reset(turnstileWidgetId);
+        if (window.turnstile && turnstileWidgetId !== null) {
+          turnstileToken = '';
+          window.turnstile.reset(turnstileWidgetId);
+        }
         submitButton.disabled = false;
       }
     });
