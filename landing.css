@@ -455,6 +455,7 @@ body.drawer-open { overflow: hidden; }
 .membership-form input::placeholder { color: rgba(24,38,52,.45); }
 .membership-form button { padding: 0 18px; border: 1px solid rgba(191,217,227,.28); color: white; background: var(--ment-ink); cursor: pointer; }
 .membership-form button:disabled { cursor: wait; opacity: .72; }
+.membership-turnstile { grid-column: 1 / -1; min-height: 0; display: flex; justify-content: center; }
 .membership-form__status { margin: 12px 8px 0; font-size: 11px; line-height: 1.5; }
 .membership-form__status.is-success { color: #48695b; }
 .membership-form__status.is-error { color: #9a4d4d; }

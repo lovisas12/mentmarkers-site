@@ -143,6 +143,7 @@
             <input type="email" id="waitlist-email" name="email" autocomplete="email" required placeholder="Din e-postadress" data-i18n-placeholder="waitlist.placeholder">
             <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             <button type="submit"><span data-i18n="membership.waitlist.cta">Gå med i väntelistan</span></button>
+            <div class="membership-turnstile" id="waitlist-turnstile" aria-hidden="true"></div>
           </form>
           <p class="membership-form__status" role="status" aria-live="polite" data-waitlist-status hidden></p>
         </section>
@@ -193,5 +194,6 @@
 <script src="avatar.js"></script>
 <script src="membership-waves.js"></script>
 <script src="membership-drawer.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=mentWaitlistTurnstileReady&amp;render=explicit" async defer></script>
 </body>
 </html>

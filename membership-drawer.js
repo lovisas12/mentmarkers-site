@@ -10,6 +10,11 @@
   const status = drawer.querySelector('[data-waitlist-status]');
   const supabaseUrl = 'https://ajmfkgxffoezbtzsyvcq.supabase.co';
   const supabasePublishableKey = 'sb_publishable_JyD7-tuVTRwrcxXeEty1hQ_kqhkZXIu';
+  const turnstileSiteKey = '0x4AAAAAAEiVYPBxlpsupaun';
+  let turnstileWidgetId = null;
+  let turnstileResolve = null;
+  let turnstileReject = null;
+  let turnstileTimeout = null;
   let lastFocused = null;
   let closeTimer = null;
 
@@ -47,13 +52,59 @@
     ? {
         sending: 'Adding you…',
         success: 'Thank you! Your email has been added to the waitlist.',
-        error: 'Something went wrong. Please try again in a moment.'
+        error: 'Something went wrong. Please try again in a moment.',
+        rateLimited: 'Too many attempts. Please wait 15 minutes and try again.'
       }
     : {
         sending: 'Lägger till dig…',
         success: 'Tack! Din e-postadress står nu på väntelistan.',
-        error: 'Något gick fel. Försök igen om en liten stund.'
+        error: 'Något gick fel. Försök igen om en liten stund.',
+        rateLimited: 'För många försök. Vänta 15 minuter och försök igen.'
       };
+
+  const finishTurnstileRequest = (method, value) => {
+    window.clearTimeout(turnstileTimeout);
+    turnstileTimeout = null;
+    const handler = method === 'resolve' ? turnstileResolve : turnstileReject;
+    turnstileResolve = null;
+    turnstileReject = null;
+    if (handler) handler(value);
+  };
+
+  const renderTurnstile = () => {
+    if (!form || !window.turnstile || turnstileWidgetId !== null) return;
+    const container = form.querySelector('#waitlist-turnstile');
+    if (!container) return;
+
+    turnstileWidgetId = window.turnstile.render(container, {
+      sitekey: turnstileSiteKey,
+      execution: 'execute',
+      appearance: 'interaction-only',
+      theme: 'light',
+      callback: (token) => finishTurnstileRequest('resolve', token),
+      'error-callback': () => finishTurnstileRequest('reject', new Error('Turnstile verification failed')),
+      'expired-callback': () => finishTurnstileRequest('reject', new Error('Turnstile token expired')),
+      'timeout-callback': () => finishTurnstileRequest('reject', new Error('Turnstile challenge timed out'))
+    });
+  };
+
+  window.mentWaitlistTurnstileReady = renderTurnstile;
+
+  const requestTurnstileToken = () => new Promise((resolve, reject) => {
+    renderTurnstile();
+    if (!window.turnstile || turnstileWidgetId === null) {
+      reject(new Error('Turnstile is not ready'));
+      return;
+    }
+
+    turnstileResolve = resolve;
+    turnstileReject = reject;
+    turnstileTimeout = window.setTimeout(
+      () => finishTurnstileRequest('reject', new Error('Turnstile verification timed out')),
+      20000
+    );
+    window.turnstile.execute(turnstileWidgetId);
+  });
 
   const showWaitlistSuccess = () => {
     if (form) form.hidden = true;
@@ -90,21 +141,30 @@
       }
 
       try {
-        const response = await fetch(`${supabaseUrl}/rest/v1/waitlist_signups`, {
+        const turnstileToken = await requestTurnstileToken();
+        const response = await fetch(`${supabaseUrl}/functions/v1/join-waitlist`, {
           method: 'POST',
           headers: {
             apikey: supabasePublishableKey,
             'Content-Type': 'application/json',
-            Prefer: 'return=minimal'
           },
           body: JSON.stringify({
             email: emailInput.value.trim().toLowerCase(),
-            source: 'website',
-            language: document.documentElement.lang === 'en' ? 'en' : 'sv'
+            language: document.documentElement.lang === 'en' ? 'en' : 'sv',
+            turnstileToken
           })
         });
 
-        if (!response.ok && response.status !== 409) throw new Error(`Waitlist request failed: ${response.status}`);
+        if (response.status === 429) {
+          if (status) {
+            status.textContent = copy.rateLimited;
+            status.className = 'membership-form__status is-error';
+            status.hidden = false;
+          }
+          return;
+        }
+
+        if (!response.ok) throw new Error(`Waitlist request failed: ${response.status}`);
 
         form.reset();
         showWaitlistSuccess();
@@ -116,6 +176,7 @@
           status.hidden = false;
         }
       } finally {
+        if (window.turnstile && turnstileWidgetId !== null) window.turnstile.reset(turnstileWidgetId);
         submitButton.disabled = false;
       }
     });
