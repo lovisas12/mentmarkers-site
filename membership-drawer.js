@@ -11,6 +11,7 @@
   const supabaseUrl = 'https://ajmfkgxffoezbtzsyvcq.supabase.co';
   const supabasePublishableKey = 'sb_publishable_JyD7-tuVTRwrcxXeEty1hQ_kqhkZXIu';
   const turnstileSiteKey = '0x4AAAAAAEiVYPBxlpsupaun';
+  let turnstileReady = Boolean(window.turnstile);
   let turnstileWidgetId = null;
   let turnstileResolve = null;
   let turnstileReject = null;
@@ -29,6 +30,7 @@
 
     requestAnimationFrame(() => {
       drawer.classList.add('is-open');
+      renderTurnstile();
       drawer.querySelector('.membership-drawer__close')?.focus();
     });
   };
@@ -72,7 +74,7 @@
   };
 
   const renderTurnstile = () => {
-    if (!form || !window.turnstile || turnstileWidgetId !== null) return;
+    if (!form || drawer.hidden || !turnstileReady || !window.turnstile || turnstileWidgetId !== null) return;
     const container = form.querySelector('#waitlist-turnstile');
     if (!container) return;
 
@@ -88,7 +90,10 @@
     });
   };
 
-  window.mentWaitlistTurnstileReady = renderTurnstile;
+  window.mentWaitlistTurnstileReady = () => {
+    turnstileReady = true;
+    renderTurnstile();
+  };
 
   const requestTurnstileToken = () => new Promise((resolve, reject) => {
     renderTurnstile();
