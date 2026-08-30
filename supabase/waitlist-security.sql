@@ -43,3 +43,4 @@ grant execute on function public.consume_waitlist_attempt(text, integer, integer
 
 drop policy if exists "Visitors can join the waitlist" on public.waitlist_signups;
 revoke insert on table public.waitlist_signups from anon;
+grant insert on table public.waitlist_signups to service_role;
