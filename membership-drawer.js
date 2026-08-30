@@ -39,8 +39,25 @@
   openers.forEach((opener) => opener.addEventListener('click', () => openDrawer(opener)));
   closers.forEach((closer) => closer.addEventListener('click', closeDrawer));
 
-  if (new URLSearchParams(window.location.search).get('waitlist') === 'open') {
-    requestAnimationFrame(() => openDrawer(openers[0]));
+  const waitlistState = new URLSearchParams(window.location.search).get('waitlist');
+
+  if (waitlistState === 'open' || waitlistState === 'thanks') {
+    requestAnimationFrame(() => {
+      openDrawer(openers[0]);
+
+      if (waitlistState !== 'thanks') return;
+      const form = drawer.querySelector('.membership-form');
+      const status = drawer.querySelector('[data-waitlist-status]');
+      if (form) form.hidden = true;
+      if (status) {
+        status.textContent = document.documentElement.lang === 'en'
+          ? 'Thank you! Your email has been added to the waitlist.'
+          : 'Tack! Din e-postadress står nu på väntelistan.';
+        status.className = 'membership-form__status is-success';
+        status.hidden = false;
+      }
+      window.history.replaceState(null, '', window.location.pathname + '#vantelistan');
+    });
   }
 
   document.addEventListener('keydown', (event) => {

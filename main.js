@@ -377,55 +377,7 @@
   }
 
   /* =================================================================
-     5. Waitlist form
-     ================================================================= */
-
-  var waitlistForm = document.querySelector('[data-waitlist-form]');
-  var waitlistStatus = document.querySelector('[data-waitlist-status]');
-
-  function waitlistMessage(key, fallback) {
-    return lang === 'en' ? EN[key] : fallback;
-  }
-
-  if (waitlistForm && waitlistStatus) {
-    waitlistForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      var button = waitlistForm.querySelector('button[type="submit"]');
-      var buttonLabel = button.querySelector('span');
-      var originalLabel = buttonLabel.textContent;
-
-      button.disabled = true;
-      buttonLabel.textContent = waitlistMessage('waitlist.sending', 'Skriver upp dig…');
-      waitlistStatus.hidden = true;
-      waitlistStatus.className = 'membership-form__status';
-
-      fetch(waitlistForm.action, {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: new FormData(waitlistForm)
-      }).then(function (response) {
-        if (!response.ok) throw new Error('FormSubmit returned ' + response.status);
-        return response.json();
-      }).then(function (data) {
-        if (data.success === false || data.success === 'false') throw new Error(data.message || 'Submission failed');
-        waitlistForm.reset();
-        waitlistStatus.textContent = waitlistMessage('waitlist.success', 'Tack! Din e-postadress står nu på väntelistan.');
-        waitlistStatus.classList.add('is-success');
-        waitlistStatus.hidden = false;
-      }).catch(function () {
-        waitlistStatus.textContent = waitlistMessage('waitlist.error', 'Något gick fel. Försök igen om en liten stund.');
-        waitlistStatus.classList.add('is-error');
-        waitlistStatus.hidden = false;
-      }).finally(function () {
-        button.disabled = false;
-        buttonLabel.textContent = originalLabel;
-      });
-    });
-  }
-
-  /* =================================================================
-     6. Boot
+     5. Boot
      ================================================================= */
 
   var stored = null;

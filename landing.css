@@ -450,6 +450,7 @@ body.drawer-open { overflow: hidden; }
 .membership-choice__lead { max-width: 46ch; margin-top: 16px; color: rgba(24,38,52,.66); font-size: 12px; line-height: 1.65; }
 .membership-form button { min-height: 50px; border: 0; border-radius: 999px; font-family: var(--ment-body); font-size: 10px; font-weight: 600; letter-spacing: .05em; }
 .membership-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px; margin-top: 21px; padding: 6px 6px 6px 18px; border: 1px solid rgba(24,38,52,.18); border-radius: 999px; background: rgba(255,255,255,.66); }
+.membership-form[hidden] { display: none; }
 .membership-form input { min-width: 0; border: 0; outline: 0; color: var(--ment-ink); background: transparent; font-family: var(--ment-body); font-size: 11px; }
 .membership-form input::placeholder { color: rgba(24,38,52,.45); }
 .membership-form button { padding: 0 18px; border: 1px solid rgba(191,217,227,.28); color: white; background: var(--ment-ink); cursor: pointer; }
