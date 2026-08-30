@@ -138,14 +138,10 @@
           <span class="membership-choice__label" data-i18n="membership.waitlist.badge">KOSTNADSFRI VÄNTELISTA</span>
           <h3 data-i18n="membership.waitlist.title">Bli en av de första.</h3>
           <p class="membership-choice__lead" data-i18n="membership.waitlist.lead">Lämna din e-postadress så hör vi av oss när Ment öppnar.</p>
-          <form class="membership-form" action="https://formsubmit.co/loooviisas@hotmail.com" method="POST">
+          <form class="membership-form" data-waitlist-form>
             <label class="sr-only" for="waitlist-email" data-i18n="waitlist.label">E-postadress</label>
             <input type="email" id="waitlist-email" name="email" autocomplete="email" required placeholder="Din e-postadress" data-i18n-placeholder="waitlist.placeholder">
-            <input type="hidden" name="_subject" value="Ny anmälan till Ment Markers väntelista">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_url" value="https://mentmarkers.com/">
-            <input type="hidden" name="_next" value="https://mentmarkers.com/?waitlist=thanks#vantelistan">
-            <input type="text" name="_honey" style="display:none">
+            <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             <button type="submit"><span data-i18n="membership.waitlist.cta">Gå med i väntelistan</span></button>
           </form>
           <p class="membership-form__status" role="status" aria-live="polite" data-waitlist-status hidden></p>
