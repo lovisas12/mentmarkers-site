@@ -15,7 +15,7 @@ Statisk webbplats för Ment Markers, byggd i ren HTML/CSS/JS utan byggsteg.
 
 Den kostnadsfria väntelistan på startsidan postar direkt till
 [FormSubmit](https://formsubmit.co) via vanlig HTML-POST. Länkarna på Ment
-Market och Om oss öppnar samma medlemsval på startsidan. Första gången någon
+Market och Om oss öppnar samma väntelista på startsidan. Första gången någon
 anmäler sig skickas ett aktiveringsmail – klicka på länken i det så fungerar
 formuläret därefter.
 
@@ -41,12 +41,6 @@ originalfoton och kan återskapas om råfilerna byts ut:
 - `step-3-blush-v2.jpg` – steg 03. Kvadratiskt beskuren kring motivet och
   lätt duotonad mot plommon/blush (85 % originalfärg) så att grönskan inte
   krockar med paletten.
-
-## Founding Members
-
-Sektionen visar Early Member-erbjudandet (99 kr/månad) men **tar inte emot
-någon betalning ännu**. När betalningen ska öppnas behöver den inaktiva knappen
-kopplas till en riktig kassa.
 
 ## Publicering
 

@@ -444,23 +444,11 @@ body.drawer-open { overflow: hidden; }
 .membership-drawer__location { display: inline-flex; align-items: center; gap: 10px; justify-self: start; padding: 9px 12px; border: 1px solid rgba(24,38,52,.14); border-radius: 999px; color: rgba(24,38,52,.64); font-size: 8px; letter-spacing: .14em; }
 .membership-drawer__location > span { width: 6px; height: 6px; border-radius: 50%; background: #9b8067; box-shadow: 0 0 12px rgba(155,128,103,.36); }
 .membership-choice { padding: 27px; border: 1px solid rgba(24,38,52,.12); border-radius: 28px; }
-.membership-choice--early { background: linear-gradient(145deg, #ebe5dc, #f8f5f0); box-shadow: 0 20px 52px rgba(24,38,52,.08); }
 .membership-choice--waitlist { background: rgba(255,255,255,.5); }
-.membership-choice__topline { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 17px; border-bottom: 1px solid rgba(24,38,52,.13); color: rgba(24,38,52,.52); font-size: 8px; font-weight: 600; letter-spacing: .15em; }
 .membership-choice h3 { margin-top: 23px; font-size: 28px; letter-spacing: -.04em; }
 .membership-choice__label { color: rgba(24,38,52,.52); font-size: 8px; font-weight: 600; letter-spacing: .15em; }
-.membership-price { display: flex; align-items: baseline; gap: 9px; margin-top: 12px; }
-.membership-price strong { font-family: var(--ment-display); font-size: 66px; font-weight: 500; line-height: .95; letter-spacing: -.065em; }
-.membership-price span { color: rgba(24,38,52,.58); font-size: 11px; }
 .membership-choice__lead { max-width: 46ch; margin-top: 16px; color: rgba(24,38,52,.66); font-size: 12px; line-height: 1.65; }
-.membership-choice__details { margin-top: 22px; border-top: 1px solid rgba(24,38,52,.13); }
-.membership-choice__details li { display: grid; grid-template-columns: 28px 1fr; gap: 13px; align-items: center; min-height: 54px; border-bottom: 1px solid rgba(24,38,52,.13); }
-.membership-choice__details span { font-size: 8px; letter-spacing: .12em; opacity: .46; }
-.membership-choice__details p { font-size: 11px; line-height: 1.5; }
-.membership-choice__pending,
 .membership-form button { min-height: 50px; border: 0; border-radius: 999px; font-family: var(--ment-body); font-size: 10px; font-weight: 600; letter-spacing: .05em; }
-.membership-choice__pending { width: 100%; margin-top: 22px; color: white; background: var(--ment-ink); cursor: not-allowed; opacity: 1; }
-.membership-choice__note { margin-top: 9px; color: rgba(24,38,52,.48); font-size: 9px; text-align: center; }
 .membership-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px; margin-top: 21px; padding: 6px 6px 6px 18px; border: 1px solid rgba(24,38,52,.18); border-radius: 999px; background: rgba(255,255,255,.66); }
 .membership-form input { min-width: 0; border: 0; outline: 0; color: var(--ment-ink); background: transparent; font-family: var(--ment-body); font-size: 11px; }
 .membership-form input::placeholder { color: rgba(24,38,52,.45); }

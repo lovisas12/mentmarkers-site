@@ -110,7 +110,7 @@
       <p class="ment-kicker" data-i18n="membership.eyebrow">EARLY ACCESS</p>
       <div class="membership__location"><span aria-hidden="true"></span><strong data-i18n="membership.stockholm">FÖRSTA LANSERINGEN · ENDAST STOCKHOLM</strong></div>
       <h2 data-i18n="membership.title">Bli en av de första.</h2>
-      <p data-i18n="membership.intro">Ment öppnar först för personer som bor i Stockholm. Early Members får prioriterad tillgång och personlig onboarding.</p>
+      <p data-i18n="membership.intro">Ment öppnar först för personer som bor i Stockholm. Gå med i väntelistan så hör vi av oss när det är dags.</p>
     </header>
 
     <article class="membership-entry-card">
@@ -129,32 +129,15 @@
     <aside class="membership-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="membership-drawer-title">
       <header class="membership-drawer__header">
         <button class="membership-drawer__close" type="button" data-membership-close aria-label="Stäng" data-i18n-aria-label="membership.drawer.close"><span aria-hidden="true">←</span></button>
-        <h2 id="membership-drawer-title" data-i18n="membership.drawer.title">Välj din väg</h2>
+        <h2 id="membership-drawer-title" data-i18n="membership.drawer.title">Gå med i väntelistan</h2>
       </header>
       <div class="membership-drawer__body">
         <div class="membership-drawer__location"><span aria-hidden="true"></span><strong data-i18n="membership.stockholm">FÖRSTA LANSERINGEN · ENDAST STOCKHOLM</strong></div>
 
-        <section class="membership-choice membership-choice--early">
-          <div class="membership-choice__topline">
-            <span data-i18n="membership.early.badge">EARLY MEMBER</span>
-            <span data-i18n="membership.priority">01 / PRIORITERAD TILLGÅNG</span>
-          </div>
-          <h3 data-i18n="membership.early.title">Ditt medlemskap</h3>
-          <div class="membership-price"><strong>99 kr</strong><span data-i18n="membership.perMonth">/ månad</span></div>
-          <p class="membership-choice__lead" data-i18n="membership.early.lock">Ditt pris förblir låst till 99 kr per månad så länge du fortsätter använda Ment.</p>
-          <ul class="membership-choice__details">
-            <li><span>01</span><p data-i18n="membership.early.item1">Prioriterad tillgång med personlig onboarding.</p></li>
-            <li><span>02</span><p data-i18n="membership.early.item2">Medlemskapet börjar först när du har bokat ditt blodprov.</p></li>
-            <li><span>03</span><p data-i18n="membership.early.item5">Blodprovet bokas och betalas separat.</p></li>
-          </ul>
-          <button class="membership-choice__pending" type="button" disabled data-i18n="membership.early.cta">Reservera din plats — 99 kr</button>
-          <p class="membership-choice__note" data-i18n="membership.early.pending">Betalningen öppnar snart.</p>
-        </section>
-
         <section class="membership-choice membership-choice--waitlist">
           <span class="membership-choice__label" data-i18n="membership.waitlist.badge">KOSTNADSFRI VÄNTELISTA</span>
-          <h3 data-i18n="membership.waitlist.title">Vill du vänta?</h3>
-          <p class="membership-choice__lead" data-i18n="membership.waitlist.lead">Följ lanseringen utan att reservera en prioriterad plats. Väntelistan ger ingen garanterad starttid.</p>
+          <h3 data-i18n="membership.waitlist.title">Bli en av de första.</h3>
+          <p class="membership-choice__lead" data-i18n="membership.waitlist.lead">Lämna din e-postadress så hör vi av oss när Ment öppnar.</p>
           <form class="membership-form" action="https://formsubmit.co/loooviisas@hotmail.com" method="POST">
             <label class="sr-only" for="waitlist-email" data-i18n="waitlist.label">E-postadress</label>
             <input type="email" id="waitlist-email" name="email" autocomplete="email" required placeholder="Din e-postadress" data-i18n-placeholder="waitlist.placeholder">
@@ -175,20 +158,12 @@
     </header>
     <div class="faq__list">
       <details>
-        <summary><span data-i18n="faq.early.q">Vad innebär det att bli Early Member?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
-        <p data-i18n="faq.early.a">Du får prioriterad tillgång och personlig onboarding. Ditt medlemspris låses till 99 kr per månad så länge du fortsätter använda Ment.</p>
+        <summary><span data-i18n="faq.waitlist.q">Vad händer när jag går med i väntelistan?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p data-i18n="faq.waitlist.a">Du får uppdateringar om lanseringen och vi hör av oss när Ment blir tillgängligt för dig.</p>
       </details>
       <details>
-        <summary><span data-i18n="faq.payment.q">Vad händer med de 99 kronorna jag betalar nu?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
-        <p data-i18n="faq.payment.a">Betalningen reserverar din Early Member-plats och räknas som din första månad. Abonnemanget börjar inte löpa förrän du har bokat ditt blodprov.</p>
-      </details>
-      <details>
-        <summary><span data-i18n="faq.test.q">Ingår blodprovet i medlemspriset?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
-        <p data-i18n="faq.test.a">Nej. Blodprovet bokas och betalas separat. Du får tydlig information om provtagningen innan du behöver boka.</p>
-      </details>
-      <details>
-        <summary><span data-i18n="faq.waitlist.q">Vad är skillnaden mellan Early Member och väntelistan?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
-        <p data-i18n="faq.waitlist.a">Early Members får prioriterad tillgång och ett låst medlemspris. Den vanliga väntelistan är kostnadsfri men ger ingen prioritet eller garanterad starttid.</p>
+        <summary><span data-i18n="faq.location.q">Var lanseras Ment först?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
+        <p data-i18n="faq.location.a">Den första lanseringen sker i Stockholm. Fler platser kommer längre fram.</p>
       </details>
       <details>
         <summary><span data-i18n="faq.medical.q">Ersätter Ment medicinsk vård?</span><span class="faq__plus" aria-hidden="true">+</span></summary>
@@ -205,7 +180,7 @@
     <div class="final-cta__content">
       <p class="ment-kicker" data-i18n="finalCta.eyebrow">EARLY ACCESS · STOCKHOLM</p>
       <h2 id="final-cta-title" data-i18n="finalCta.title">Börja innan det känns.</h2>
-      <p data-i18n="finalCta.body">Reservera din plats till Ment och få tillgång först.</p>
+      <p data-i18n="finalCta.body">Gå med i väntelistan så hör vi av oss när Ment öppnar.</p>
       <button class="final-cta__button" type="button" data-membership-open aria-controls="membership-drawer" aria-expanded="false"><span data-i18n="finalCta.button">Gå med i väntelistan</span><span aria-hidden="true">↗</span></button>
     </div>
     <footer class="final-cta__footer">
