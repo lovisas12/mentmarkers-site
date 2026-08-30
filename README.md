@@ -13,11 +13,13 @@ Statisk webbplats för Ment Markers, byggd i ren HTML/CSS/JS utan byggsteg.
 
 ## Intresselistan
 
-Den kostnadsfria väntelistan på startsidan postar direkt till
-[FormSubmit](https://formsubmit.co) via vanlig HTML-POST. Länkarna på Ment
+Den kostnadsfria väntelistan på startsidan postar till
+[FormSubmit](https://formsubmit.co) i bakgrunden och visar resultatet direkt
+under formuläret. Länkarna på Ment
 Market och Om oss öppnar samma väntelista på startsidan. Första gången någon
-anmäler sig skickas ett aktiveringsmail – klicka på länken i det så fungerar
-formuläret därefter.
+anmäler sig skickas ett aktiveringsmail till webbplatsens mottagaradress –
+klicka på länken i det en gång så levereras nuvarande och kommande anmälningar.
+Personen som skriver upp sig behöver inte bekräfta sin adress.
 
 ## Språk
 
