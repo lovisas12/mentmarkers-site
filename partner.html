@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samarbeta med Ment — Partnerskap</title>
+  <meta name="description" content="Vill du samarbeta med Ment? Berätta om din organisation och hur vi tillsammans kan utveckla framtidens preventiva kvinnohälsa.">
+  <meta name="theme-color" content="#b8c7cc">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="partner.css">
+  <meta property="og:title" content="Samarbeta med Ment">
+  <meta property="og:description" content="Tillsammans formar vi framtidens preventiva kvinnohälsa.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mentmarkers.com/partner.html">
+</head>
+<body class="home-redesign partner-page">
+  <a class="skip-link" href="#main" data-i18n="skip">Hoppa till innehåll</a>
+
+  <header class="ment-header" id="site-header">
+    <div class="ment-header__glass">
+      <a class="ment-header__logo" href="index.html" aria-label="Ment">
+        <img src="assets/ment-logo.svg" alt="Ment" width="43" height="48">
+      </a>
+      <nav class="ment-nav" aria-label="Huvudmeny" data-i18n-aria-label="nav.label">
+        <a href="index.html#sa-funkar-det" data-i18n="nav.how">Så funkar Ment</a>
+        <a href="ment-market.html" data-i18n="nav.market">Ment Market</a>
+        <a href="om-oss.html" data-i18n="nav.about">Om oss</a>
+        <a href="partner.html" class="is-current" aria-current="page" data-i18n="nav.partner">Samarbeta</a>
+      </nav>
+      <div class="ment-header__actions">
+        <span class="lang-switch" role="group" aria-label="Språk" data-i18n-aria-label="lang.label">
+          <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+          <span class="lang-switch__sep" aria-hidden="true">/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="partner-main">
+    <section class="partner-contact" id="kontakt" aria-labelledby="partner-form-title">
+      <div class="partner-contact__intro">
+        <p class="partner-kicker" data-i18n="partner.form.eyebrow">SAMARBETEN</p>
+        <h1 id="partner-form-title" data-i18n="partner.form.title">Samarbeta med Ment.</h1>
+        <p data-i18n="partner.form.intro">Berätta om möjligheten.</p>
+      </div>
+
+      <div class="partner-form-wrap">
+        <form class="partner-form" action="https://formsubmit.co/infomentmarkers@gmail.com" method="POST" data-partner-form>
+          <input type="hidden" name="_subject" value="Ny samarbetsförfrågan via mentmarkers.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://mentmarkers.com/partner.html?submitted=thanks#kontakt">
+          <input class="partner-form__honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="partner-form__row">
+            <label>
+              <span data-i18n="partner.form.name">Namn</span>
+              <input type="text" name="name" autocomplete="name" required placeholder="Ditt för- och efternamn" data-i18n-placeholder="partner.form.namePlaceholder">
+            </label>
+            <label>
+              <span data-i18n="partner.form.company">Organisation</span>
+              <input type="text" name="organisation" autocomplete="organization" required placeholder="Företag, klinik eller organisation" data-i18n-placeholder="partner.form.companyPlaceholder">
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="partner.form.email">E-post</span>
+            <input type="email" name="email" autocomplete="email" required placeholder="namn@foretag.se" data-i18n-placeholder="partner.form.emailPlaceholder">
+          </label>
+
+          <label>
+            <span data-i18n="partner.form.message">Berätta om möjligheten</span>
+            <textarea name="message" rows="8" required placeholder="Beskriv er idé, er organisation och vad ni vill skapa tillsammans med Ment." data-i18n-placeholder="partner.form.messagePlaceholder"></textarea>
+          </label>
+
+          <label class="partner-form__consent">
+            <input type="checkbox" name="data_consent" value="Ja" required>
+            <span data-i18n="partner.form.consent">Jag godkänner att Ment sparar mina uppgifter för att kunna besvara förfrågan.</span>
+          </label>
+
+          <div class="partner-form__actions">
+            <button type="submit"><span data-i18n="partner.form.submit">SKICKA FÖRFRÅGAN</span><span aria-hidden="true">↗</span></button>
+            <p data-i18n="partner.form.note">Vi svarar vanligtvis inom några arbetsdagar.</p>
+          </div>
+        </form>
+
+        <div class="partner-success" role="status" aria-live="polite" hidden data-partner-success>
+          <p class="partner-kicker" data-i18n="partner.success.eyebrow">TACK</p>
+          <h2 data-i18n="partner.success.title">Din förfrågan är på väg.</h2>
+          <p data-i18n="partner.success.body">Vi har tagit emot dina uppgifter och hör av oss så snart vi kan.</p>
+          <a href="index.html"><span data-i18n="partner.success.back">Tillbaka till Ment</span><span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="partner-footer">
+    <a href="index.html" aria-label="Ment"><img src="assets/ment-logo.svg" alt="Ment"></a>
+    <span data-i18n="footer.disclaimer">Ger hälsoinsikter men ställer inte diagnos och ersätter inte medicinsk vård.</span>
+    <a href="mailto:infomentmarkers@gmail.com">infomentmarkers@gmail.com</a>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="partner.js"></script>
+</body>
+</html>

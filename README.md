@@ -6,6 +6,7 @@ Statisk webbplats för Ment Markers, byggd i ren HTML/CSS/JS utan byggsteg.
 
 - `index.html` – startsida
 - `om-oss.html` – om oss + grundare
+- `partner.html` – partnerskap och samarbetsformulär
 - `style.css` – designtokens och all styling
 - `main.js` – språkväxling, flikar, header-scroll, animationer
 - `assets/` – logotyp och bilder
@@ -20,6 +21,13 @@ Market och Om oss öppnar samma väntelista på startsidan. Första gången någ
 anmäler sig skickas ett aktiveringsmail till webbplatsens mottagaradress –
 klicka på länken i det en gång så levereras nuvarande och kommande anmälningar.
 Personen som skriver upp sig behöver inte bekräfta sin adress.
+
+## Samarbetsförfrågningar
+
+Formuläret på partnersidan skickas via FormSubmit till webbplatsens befintliga
+kontaktadress. Efter skickad förfrågan återvänder besökaren till en bekräftelse
+på samma sida. Formuläret innehåller ett dolt spamfält och kräver samtycke till
+att kontaktuppgifterna sparas för att förfrågan ska kunna besvaras.
 
 ## Språk
 

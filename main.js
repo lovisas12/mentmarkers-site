@@ -29,6 +29,7 @@
     'nav.measure': 'Your longevity',
     'nav.how': 'How Ment works',
     'nav.about': 'About',
+    'nav.partner': 'Partner with us',
     'lang.label': 'Language',
 
     /* — index.html — */
@@ -148,7 +149,27 @@
     'value4.body': 'We focus on long term, trackable change: biological age, risk markers and real trends over time.',
     'aboutWaitlist.title': 'Stop guessing about your own body.',
     'waitlist.body': 'We are launching soon. Join the waitlist and be among the first to hear from us.',
-    'waitlist.submit': 'Join'
+    'waitlist.submit': 'Join',
+
+    /* — partner.html — */
+    'partner.form.eyebrow': 'PARTNERSHIPS',
+    'partner.form.title': 'Partner with Ment.',
+    'partner.form.intro': 'Tell us about the opportunity.',
+    'partner.form.name': 'Name',
+    'partner.form.namePlaceholder': 'Your first and last name',
+    'partner.form.company': 'Organisation',
+    'partner.form.companyPlaceholder': 'Company, clinic or organisation',
+    'partner.form.email': 'Email',
+    'partner.form.emailPlaceholder': 'name@company.com',
+    'partner.form.message': 'Tell us about the opportunity',
+    'partner.form.messagePlaceholder': 'Describe your idea, your organisation and what you would like to create together with Ment.',
+    'partner.form.consent': 'I agree that Ment may store my details to respond to this enquiry.',
+    'partner.form.submit': 'SEND ENQUIRY',
+    'partner.form.note': 'We usually reply within a few working days.',
+    'partner.success.eyebrow': 'THANK YOU',
+    'partner.success.title': 'Your enquiry is on its way.',
+    'partner.success.body': 'We have received your details and will be in touch as soon as we can.',
+    'partner.success.back': 'Back to Ment'
   };
 
   /* Categories are rendered from data, so they carry both languages. */
