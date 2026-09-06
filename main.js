@@ -167,8 +167,8 @@
     'partner.form.submit': 'SEND ENQUIRY',
     'partner.form.note': 'We usually reply within a few working days.',
     'partner.success.eyebrow': 'THANK YOU',
-    'partner.success.title': 'Your enquiry is on its way.',
-    'partner.success.body': 'We have received your details and will be in touch as soon as we can.',
+    'partner.success.title': 'Sent.',
+    'partner.success.body': 'Thank you for your enquiry. We will be in touch as soon as we can.',
     'partner.success.back': 'Back to Ment'
   };
 
